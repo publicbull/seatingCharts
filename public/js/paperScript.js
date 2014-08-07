@@ -6,9 +6,6 @@ var sectionTen = new Path();
 	sectionTen.add(new Point(222, 179));
 	sectionTen.add(new Point(119, 138));
 	sectionTen.closed = true;
-		function onMouseDown(event) {
-			console.log('You pressed the mouse!');
-		}
 
 	var sectionNine = new Path();
 	sectionNine.strokeColor = 'black';
@@ -348,3 +345,19 @@ var sectionTen = new Path();
 	stage.add(new Point(420, 238));
 	stage.add(new Point(397, 238));
 	stage.closed = true;
+
+
+var roseBowl = [sectionOne, sectionTwo, sectionThree, sectionFour, sectionFive, sectionSix, sectionSeven, sectionEight, sectionNine, sectionTen, sectionEleven, sectionTwelve, sectionThirteen, sectionFourteen, sectionFifteen, sectionSixteen, sectionSeventeen, sectionEighteen, sectionNineteen, sectionTwenty, sectionTwnetyOne, sectionTwentyTwo, sectionTwentyThree, sectionTwnetyFour, sectionTwentyFive, sectionTwentySix, sectionTwentyEight, gaPitOne, gaPitTwo, stage];
+
+
+for (var i = 0, len = roseBowl.length; i < len; i++) {
+	var el = roseBowl[i];
+
+	el.onClick = function(event) {
+		// console.log(this);
+		var copy = this.clone();
+		copy.scale(2.0, new Point(45, 60));
+		copy.strokeColor = 'red';
+		console.log(copy);
+	}
+};

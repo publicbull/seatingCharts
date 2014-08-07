@@ -140,8 +140,6 @@ window.onload = function() {
 	    for (var i = 0, len = rosebowl.length; i < len; i++) {
 	    	var el = rosebowl[i];
 
-	    	console.log(el.name);
-
 	    	el.mouseover(function() {
 	    		this.toFront();
 	    		var x = this.id;
