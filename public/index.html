@@ -8,11 +8,28 @@
 
 </head>
 <body>
+		<div class="container">
+		<div class="row">
+			<div class="col-sml-12">
+				<h3>The Purpose of This Site</h3>
+				<p>About a week ago I was attending a function where the head of Ticketmaster engineering team posed a question.  That question, which seemed so simple in my head, immediatly gave me an itch I had to scratch.  The question was this: "how would you take our current seating charts and turn them into interactive seating charts."  So simple, was my first thought.  I would rewrite your seating charts with javascript and then make them interactive, that would be easy.  As is all things, the thoughts in your head are easier than actually doing.  Below are my attempts at taking tickmaster seating charts and converting them to javascript.  Enjoy!</p>
+			</div>
+		</div>
+	</div>
+		<div class="container">
+		<div class="row">
+			<div class="col-sml-12">
+				<h3>My First Attempt with Paper.js</h3>
+				<p></p>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-7">
 				<h2>Rose Bowl</h2>
-				<button id="paper">Original Image</button><button>PaperJS Canvas</button>
+				<button id="rose_original">Original Image</button><button id="paper_js">PaperJS Canvas</button>
+				
 			</div>
 		</div>
 	</div>
@@ -22,6 +39,7 @@
 
 	        <div class="col-sm-7">
 	        	<div id="rosebowl_container">
+	        		<img id="rosebowl_gif" src="img/rosebowl.gif" class="img">
 	        		<canvas id="myCanvas" resize="true"></canvas>
 	        	</div>
 	        </div>
@@ -32,14 +50,17 @@
 		<div class="row">
 			<div class="col-sm-7">
 				<h2>Hollywood Bowl</h2>
-				<button>Original Image</button><button>RaphaelJS SVG</button>
+				<button id="hb_original_gif">Original Image</button><button id="raph_js">RaphaelJS SVG</button>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 	    <div class="row">
 	        <div class="col-sm-7">
-	        	<div id="canvas_container"></div>
+	        	<div id="rb_container">
+		        	<img id="hb_original" src="img/22317s.gif" class="img">
+		        	<div id="canvas_container"></div>
+	        	</div>
 	        </div>
 	        <div class="col-sm-3">
 	        	<div id="container_venuinfo">
