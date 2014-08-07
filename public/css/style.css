@@ -1,0 +1,39 @@
+
+
+#rosebowl_container {
+	border: 1px solid #aaa;
+	margin-bottom: 10px;
+	width: 670px;
+	height: 410px;
+}
+
+#canvas_container {
+     width: 670px;
+     border: 1px solid #aaa;
+}
+
+#canvas_container_two {
+	width: 670px;
+    border: 1px solid #aaa;
+}
+
+#container_venuinfo {
+	/*position: relative;*/
+	height: 410px;
+	width: 300px;
+	border: 1px solid #aaa;
+}
+
+.section_info {
+	width: 300px;
+	height: 410px;
+	border: 1px solid #aaa;
+	display: none;
+}
+
+#json {
+	border: 1px solid #aaa;
+	overflow: scroll;
+	width: 300px;
+	height: 410px;
+}
